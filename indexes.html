@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myportfolio</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images (1).jpeg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer & Photographer</p>
+                <h1>Hi, I'm <span>Samrat Dal</span><br>From Kolkata...</h1>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1">
+                <img src="samrat2.jpg (2).jpg">
+            </div>
+            <div class="About-col-2">
+                <h1>About Me</h1>
+                <p>Hey, I’m SAMRAT DAL, a creative and versatile graphic designer with a keen eye for detail. I specialize in creating visually stunning designs that convey a brand’s message and captivate its audience. I’m well-versed in a variety of design software and techniques, and I’m always looking for new ways to enhance my skills. When I’m not designing, I enjoy reading, cooking, and spending time with my pets.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                    <li><span>Web Devolopment</span><br>Web app Devolopment</li>
+                    <li><span>Photography</span><br>Capturing the world in oneclick </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    <li><span>Current</span><br>Intranship At Oasis Infobyte</li>
+                    <li><span>2022-2023</span><br>Internship At Elkart Ecommerce</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                    <li><span>2022-Current</span><br>BCA At Netaji Subhash Engineering College</li>
+                    <li><span>10+2</span><br>St Thomas Memorial School</li>
+                    <li><span>10th</span><br>Carmel School</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+            
+            <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+            <p class="w3-wide">Photography</p>
+            <div class="w3-white">
+              <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+            </div>
+            <p class="w3-wide">Web Design</p>
+            <div class="w3-white">
+              <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+            </div>
+            <p class="w3-wide">Photoshop</p>
+            <div class="w3-white">
+              <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+            </div><br>
+            
+            <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+              <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">11+</span><br>
+                Partners
+              </div>
+              <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">55+</span><br>
+                Projects Done
+              </div>
+              <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">89+</span><br>
+                Happy Clients
+              </div>
+              <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">150+</span><br>
+                Meetings
+              </div>
+            </div>
+
+              
+        
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+             for(tablink of tablinks){
+                tablink.classList.remove("active-link"); 
+                 }
+                 for(tabcontents of tabcontents){
+                    tablink.classList.remove("active-tab");
+                    }  
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab")
+                }
+                    </script>
+    
+</body>
+</html>
